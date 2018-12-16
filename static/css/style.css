@@ -89,9 +89,12 @@ h4 {
 	font-size: 1.3em;
 }
 
-h5,
-h6 {
+h5 {
 	font-size: 1.2em;
+}
+
+h6 {
+	font-size: 1.0em;
 }
 
 div.content {
@@ -134,7 +137,7 @@ ol {
 li {
 	line-height: 1.75em;
 	margin-left: .75em;
-	list-style-type: none;
+	list-style-type: square;
 }
 
 table {
@@ -169,6 +172,7 @@ a {
 
 a:active {
 	color: #777;
+  background-color: yellow;
 }
 
 a:hover {
@@ -176,6 +180,10 @@ a:hover {
 }
 
 p a {
+	color: #0366d6;
+}
+
+ul a {
 	color: #0366d6;
 }
 
@@ -220,3 +228,13 @@ blockquote {
 blockquote p {
 	display: block;
 }
+
+
+/* toc style */
+.bd-callout {
+  padding: 1.0rem;
+  margin-top: 1.0rem;
+  margin-bottom: 1.0rem;
+  border: 1px solid #eee;
+  border-left-width: .25rem;
+  border-radius: .25rem; }

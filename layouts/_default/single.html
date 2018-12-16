@@ -3,6 +3,8 @@
 <div class="content">
   <h1>{{ .Title }}</h1>
   <aside>{{ range .Params.tags }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a></a>&nbsp;&nbsp;&nbsp;{{end}}</aside>
+
+  {{ partial "table-of-contents.html" . }}
   <p>{{ .Content }}</p>
 </div>
 
